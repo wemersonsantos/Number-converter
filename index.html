@@ -12,42 +12,26 @@
     
     <div class="container">
         <div class="row">
-            <h1 class="col-6 offset-3">Conversor</h1>
-            <h3>Estamos convertendo um número binário para decimal.</h3>
+            <h1 class="col-6 offset-3 mt-3">Conversor</h1>
+            <h3>Convertendo um número binário para decimal.</h3>
         </div>
 
         <div>
-            <p>Binário</p>
-            <input type='text' id="number" name="numberforConv" placeholder="Digite o número">
+            <divc class="d-flex flex-column">
+                <p class="paragrafo">Binário</p>
+                <input type='text' id="number" name="numberforConv" placeholder="Digite o número">
+            </divc>
         </div>
         <div>
-            <p>Decimal</p>
-            <input type='text' id="numberConv" name="numberConv" placeholder="Número convertido" readonly>
+            <div class="d-flex flex-column">
+                <p class="paragrafo">Decimal</p>
+                <input type='text' id="numberConv" name="numberConv" placeholder="Número convertido" readonly>
+            </div>
         </div>
         <div>
-            <button type="submit" id="buttonSb" class="btn btn-secondary">Converter</button>
-            <select id="Converter">
-                <optgroup>
-                    <option value="BD">Binario para Decimal</option>
-                    <option value="BH">Binario para Hexadecimal</option>
-                    <option value="BO">Binario para Octadecimal</option>
-                </optgroup>
-                <optgroup>
-                    <option value="DB">Decimal para Binario</option>
-                    <option value="DH">Decimal para Hexadecimal</option>
-                    <option value="DO">Decimal para Octadecimal</option>
-                </optgroup>
-                <optgroup>
-                    <option value="HB">Hexadecimal para Binario</option>
-                    <option value="HD">Hexadecimal para Decimal</option>
-                    <option value="HO">Hexadecimal para Octadecimal</option>
-                </optgroup>
-                <optgroup>
-                    <option value="OB">Octadecimal para Binario</option>
-                    <option value="OD">Octadecimal para Decimal</option>
-                    <option value="OH">Octadecimal para Hexadecimal</option>
-                </optgroup>
-            </select>
+            <div class="d-flex justify-content-center m-3">
+                <button type="submit" id="buttonSb" class="btn btn-secondary">Converter</button>
+            </div>
         </div>
     </div>
 
